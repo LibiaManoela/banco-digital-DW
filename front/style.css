@@ -50,6 +50,8 @@ header li {
     flex-direction: column;
     padding: 8vh 8vw;
     background-color: #ff0000;
+    border-radius: 15px;
+    margin-top: 5px;
 }
 
 .saldo {
@@ -60,4 +62,6 @@ header li {
     padding: 8vh 8vw;
     gap: 2vw;
     background-color: #ff0000;
+    border-radius: 15px;
+    margin: 5px 5px;
 }
