@@ -35,3 +35,29 @@ header li {
     justify-content: flex-start;
     align-items: flex-start;
 }
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    font-size: 20px;
+    color: #fff;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    padding: 8vh 8vw;
+    background-color: #ff0000;
+}
+
+.saldo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8vh 8vw;
+    gap: 2vw;
+    background-color: #ff0000;
+}

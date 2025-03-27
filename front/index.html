@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="scripts/main.js"></script>
     <title>Banco digital</title>
 </head>
 <body>
@@ -24,16 +25,17 @@
 
     <div class="home">
 
-        <section id="cabecalho">
+        <div class="cabecalho">
             <h2>Olá, usuário</h2>
             <p>Cliente BANCO</p>
-        </section>
+        </div>
 
-        <section id="sobre">
-            <h2>Saldo disponível</h2>
-            <p>R$ *****</p>
-            <button>Mostrar/Ocultar saldo</button>
-        </section>
+        <div class="saldo">
+            <p>Seu saldo é: R$ </p>
+            <p id="valor">1000,00</p>  
+            <label for="toggleSaldo">Mostrar Saldo</label>            
+            <input type="checkbox" id="toggleSaldo">
+        </div>
 
     </div>
         
