@@ -38,7 +38,14 @@ header li {
     align-items: flex-start;
 }
 
+.ajuda a {
+    color: black;
+    text-decoration-line: underline;
+}
+
 .home {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
     display: flex;
     flex-direction: column;
     justify-content:space-evenly;
@@ -66,6 +73,30 @@ header li {
     background-color: #ff0000;
     border-radius: 15px;
     margin: 5px 5px;
+}
+
+.menu-bar-bottom {
+    background-color: #ff0000;
+    position: fixed;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+}
+
+.menu-bar-bottom ul {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.menu-bar-bottom li a {
+    color: rgb(0, 0, 0);
+    justify-content: space-around;
+    text-decoration-line: underline;
 }
 
 .login-page {
@@ -110,26 +141,4 @@ button {
 
 button:hover {
     background: #ddd;
-}
-
-.menu-bar-botton {
-    background-color: #ff0000;
-    position: fixed;
-    width: 100%;
-    padding: 10px 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.menu-bar-botton ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.menu-bar-botton li {
-    margin: 0 10px;
 }
