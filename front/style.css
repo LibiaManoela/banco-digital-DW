@@ -11,6 +11,8 @@ body {
 
 header {
     background-color: #ff0000;
+    position: fixed;
+    width: 100%;
     padding: 10px 20px;
     display: flex;
     flex-direction: row;
@@ -36,7 +38,14 @@ header li {
     align-items: flex-start;
 }
 
+.ajuda a {
+    color: black;
+    text-decoration-line: underline;
+}
+
 .home {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
     display: flex;
     flex-direction: column;
     justify-content:space-evenly;
@@ -64,4 +73,72 @@ header li {
     background-color: #ff0000;
     border-radius: 15px;
     margin: 5px 5px;
+}
+
+.menu-bar-bottom {
+    background-color: #ff0000;
+    position: fixed;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+}
+
+.menu-bar-bottom ul {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.menu-bar-bottom li a {
+    color: rgb(0, 0, 0);
+    justify-content: space-around;
+    text-decoration-line: underline;
+}
+
+.login-page {
+    background-color: #fa3e3e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    background: #ff0000;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.login-container h2 {
+    color: #fff;
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    width: 100%;
+    background: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ddd;
 }
