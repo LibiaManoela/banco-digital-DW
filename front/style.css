@@ -75,6 +75,22 @@ header li {
     margin: 5px 5px;
 }
 
+.acoes {
+    display: flex;
+    flex-direction: row;
+}
+
+.acoes p{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4vh 4vw;
+    gap: 2vw;
+    background-color: #ff0000;
+    border-radius: 15px;
+    margin: 5px 5px;
+}
+
 .menu-bar-bottom {
     background-color: #ff0000;
     position: fixed;
@@ -99,46 +115,14 @@ header li {
     text-decoration-line: underline;
 }
 
-.login-page {
-    background-color: #fa3e3e;
+.transacoes {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
-    height: 100vh;
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
-.login-container {
-    background: #ff0000;
-    padding: 20px;
+    padding: 8vh 8vw;
+    background-color: #ff0000;
     border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    text-align: center;
-}
-
-.login-container h2 {
-    color: #fff;
-}
-
-input {
-    display: block;
-    width: 100%;
-    margin: 10px 0;
-    padding: 8px;
-    border: none;
-    border-radius: 5px;
-}
-
-button {
-    padding: 10px;
-    width: 100%;
-    background: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background: #ddd;
+    margin-top: 5px;
+    gap: 20px;
 }
