@@ -75,12 +75,12 @@ header li {
     margin: 5px 5px;
 }
 
-.acoes {
+.acoes ul{
     display: flex;
     flex-direction: row;
 }
 
-.acoes p{
+.acoes li{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -89,6 +89,11 @@ header li {
     background-color: #ff0000;
     border-radius: 15px;
     margin: 5px 5px;
+}
+
+.acoes li a {
+    color: #fff;
+    text-decoration: none;
 }
 
 .menu-bar-bottom {
