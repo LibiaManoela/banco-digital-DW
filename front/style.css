@@ -96,7 +96,7 @@ header li {
     text-decoration: none;
 }
 
-.menu-bar-bottom {
+footer {
     background-color: #ff0000;
     position: fixed;
     width: 100%;
@@ -106,15 +106,16 @@ header li {
     justify-content: center;
     align-items: center;
     bottom: 0;
+    font-size: 20px;
 }
 
-.menu-bar-bottom ul {
+footer ul {
     display: flex;
     flex-direction: row;
     gap: 30px;
 }
 
-.menu-bar-bottom li a {
+footer li a {
     color: rgb(0, 0, 0);
     justify-content: space-around;
     text-decoration-line: underline;
@@ -130,4 +131,20 @@ header li {
     border-radius: 15px;
     margin-top: 5px;
     gap: 20px;
+}
+
+.transacoes table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.transacoes th, .transacoes td {
+    text-align: center;
+    color: #fff;
+    padding: 15px 30px;
+    border-bottom: #fff solid 1px;
+}
+
+.transacoes th {
+    width: 25%; /* Ajusta a largura das colunas */
 }

@@ -22,20 +22,30 @@
     </header>
 
     <div class="home">
+        <div class="pagar-conta">
+            <h3>Pagar conta</h3>
+            <form id="pagarContaForm">
+                <label for="codigoBarras">Código de barras:</label>
+                <input type="text" id="codigoBarras" name="codigoBarras" required>
 
+                <label for="valor">Valor:</label>
+                <input type="number" id="valor" name="valor" required>
 
-        <div class="menu-bar-bottom">
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="transacoes.html">Transações</a></li>
-                <li><a href="#cartao">Cartão</a></li>
-                <li><a href="#configuracoes">Configurações</a></li>
-            </ul>
+                <button type="submit">Pagar</button>
+            </form>
         </div>
+
     </div>
 
-<footer>
-    <p>&copy; 2025 Meu Site. Todos os direitos reservados.</p>
-</footer>
+    <footer>
+        <div class="menu-bar-bottom">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="transacoes.html">Transações</a></li>
+                    <li><a href="#cartao">Cartão</a></li>
+                    <li><a href="#configuracoes">Configurações</a></li>
+                </ul>
+            </div>
+    </footer>
 </body>
 </html>
