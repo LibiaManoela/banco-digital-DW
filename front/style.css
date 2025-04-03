@@ -9,6 +9,10 @@ body {
     background-color: #fa3e3e;
 }
 
+/* 
+    Header e Footer
+*/
+
 header {
     background-color: #ff0000;
     position: fixed;
@@ -54,6 +58,35 @@ header li {
     color: #fff;
 }
 
+footer {
+    background-color: #ff0000;
+    position: fixed;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    font-size: 20px;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+footer li a {
+    color: rgb(0, 0, 0);
+    justify-content: space-around;
+    text-decoration-line: underline;
+}
+
+/* 
+    Conteúdo do index
+*/
+
 .cabecalho {
     display: flex;
     flex-direction: column;
@@ -96,32 +129,9 @@ header li {
     text-decoration: none;
 }
 
-footer {
-    background-color: #ff0000;
-    position: fixed;
-    width: 100%;
-    padding: 10px 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    bottom: 0;
-    font-size: 20px;
-}
-
-footer ul {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-}
-
-footer li a {
-    color: rgb(0, 0, 0);
-    justify-content: space-around;
-    text-decoration-line: underline;
-}
-
-/* Transações*/
+/* 
+    Transações
+*/
 .transacoes {
     display: flex;
     flex-direction: column;
@@ -146,10 +156,6 @@ footer li a {
     border-bottom: #fff solid 1px;
 }
 
-.transacoes th {
-    width: 25%;
-}
-
 /*
     homePage 
 */
@@ -163,8 +169,9 @@ footer li a {
 /* nichos */
 .dropdown-item {
     background-color: #790000;
-    padding: 16px;
+    padding: 10px;
     font-size: 16px;
+    margin: 0 4px;
     border: none;
 }
 
@@ -189,9 +196,10 @@ footer li a {
     padding: 10px 16px;
     text-decoration: none;
     display: block;
-    border: black solid 1px;
     margin-right: -10px;
     margin-left: -10px;
+    border: black solid 1px;
+    border-bottom: black solid -2px;
 }
   
 /* muda cor dos itens ao passar o mouse */
@@ -199,3 +207,45 @@ footer li a {
   
 /* mostra os itens quando passa o mouse */
 .dropdown-item:hover .dropdown-content {display: block;}
+
+/*
+    Formulário de cadastro
+*/
+
+.login-body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.login-container {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    background: #790000;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+}
