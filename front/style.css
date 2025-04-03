@@ -208,34 +208,71 @@ footer li a {
 /* mostra os itens quando passa o mouse */
 .dropdown-item:hover .dropdown-content {display: block;}
 
+.login-button {
+    background-color: #790000;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.login-button a {
+    color: white;    
+    text-decoration: none;
+}
+
+/* Conteúdo da homePage */
+
+.PhomePage {
+    margin-top: 90px;
+}
+
 /*
-    Formulário de cadastro
+    Página de cadastro
 */
 
+.login-header {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    background-color: #ff0000;
+}
+
+.login-header h2 {
+    opacity: 0;
+}
+
+.login-header a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
 .login-body {
-    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #f4f4f4;
+    height: 90vh;
+    background-color: #fa3e3e;
 }
-
+    
 .login-container {
     background: white;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     text-align: center;
 }
-
+    
 input {
     display: block;
     width: 100%;
     padding: 10px;
     margin: 10px 0;
 }
-
+    
 button {
     background: #790000;
     color: white;
@@ -244,8 +281,9 @@ button {
     cursor: pointer;
     width: 100%;
 }
-
+    
 .error {
     color: red;
     margin-top: 10px;
 }
+    
