@@ -121,6 +121,7 @@ footer li a {
     text-decoration-line: underline;
 }
 
+/* Transações*/
 .transacoes {
     display: flex;
     flex-direction: column;
@@ -146,5 +147,7 @@ footer li a {
 }
 
 .transacoes th {
-    width: 25%; /* Ajusta a largura das colunas */
+    width: 25%;
 }
+
+/* homePage */
