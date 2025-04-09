@@ -231,7 +231,7 @@ footer li a {
 }
 
 /*
-    Página de cadastro
+    Página de login
 */
 
 .login-header {
@@ -286,4 +286,28 @@ button {
     color: red;
     margin-top: 10px;
 }
+
+.PLogin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 
+    Página de contato
+*/
+
+.contato-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: #fa3e3e;
+}
     
+.contato-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
