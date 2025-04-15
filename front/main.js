@@ -1,10 +1,38 @@
-document.getElementById("toggleSaldo").addEventListener("change", function() {
-    var saldo = document.getElementById("valor");
+//Validação do Login
+function login() {
+    const user = document.getElementById("username").value;
+    const pass = document.getElementById("password").value;
+    const errorMessage = document.getElementById("error-message");
 
-    // Verifica se a checkbox está marcada e alterna a visibilidade do saldo
-    if (this.checked) {
-        saldo.style.display = "block";  // Exibe o saldo
+    const predefinedUser = "admin";
+    const predefinedPass = "1234";
+
+    if (user === predefinedUser && pass === predefinedPass) {
+        alert("Login bem-sucedido!");
+        window.location.href = "index.html"; // Redireciona para a página index.html
     } else {
-        saldo.style.display = "none";   // Oculta o saldo
+        errorMessage.textContent = "Usuário ou senha incorretos.";
     }
-});
+}
+
+//Fechar mensagem dos cookies na HomePage
+function cookies(){
+    const cookies = document.getElementById('cookies')
+    const header  = document.getElementById('header')
+    header.removeChild(cookies)
+}
+
+//Mostrar saldo
+function saldo(){
+    const saldo    = document.getElementById('valor')
+    const checkbox = document.getElementById('toggleSaldo')
+
+    const valor  = 'R$ 1000,00';
+    const oculto = '*********';
+
+    checkbox.addEventListener('change', function() {
+    saldo.textContent = this.checked ? valor : oculto;
+    });
+}
+
+window.onload = saldo;

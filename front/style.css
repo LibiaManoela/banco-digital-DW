@@ -9,6 +9,10 @@ body {
     background-color: #fa3e3e;
 }
 
+/* 
+    Header e Footer
+*/
+
 header {
     background-color: #ff0000;
     position: fixed;
@@ -31,6 +35,9 @@ header li {
     margin: 0 10px;
 }
 
+#header {
+    
+}
 .info {
     display: flex;
     flex-direction: column;
@@ -53,6 +60,35 @@ header li {
     font-size: 20px;
     color: #fff;
 }
+
+footer {
+    background-color: #ff0000;
+    position: fixed;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    font-size: 20px;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+footer li a {
+    color: rgb(0, 0, 0);
+    justify-content: space-around;
+    text-decoration-line: underline;
+}
+
+/* 
+    Conteúdo do index
+*/
 
 .cabecalho {
     display: flex;
@@ -96,31 +132,9 @@ header li {
     text-decoration: none;
 }
 
-footer {
-    background-color: #ff0000;
-    position: fixed;
-    width: 100%;
-    padding: 10px 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    bottom: 0;
-    font-size: 20px;
-}
-
-footer ul {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-}
-
-footer li a {
-    color: rgb(0, 0, 0);
-    justify-content: space-around;
-    text-decoration-line: underline;
-}
-
+/* 
+    Transações
+*/
 .transacoes {
     display: flex;
     flex-direction: column;
@@ -145,6 +159,340 @@ footer li a {
     border-bottom: #fff solid 1px;
 }
 
-.transacoes th {
-    width: 25%; /* Ajusta a largura das colunas */
+/*
+    homePage 
+*/
+
+/* geral */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* nichos */
+.dropdown-item {
+    background-color: #790000;
+    padding: 10px;
+    font-size: 16px;
+    margin: 0 4px;
+    border: none;
+}
+
+.dropdown-item a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+/* conteúdo (aqui ele é oculto) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    z-index: 1;
+}
+  
+/* Links do dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    margin-right: -10px;
+    margin-left: -10px;
+    border: black solid 1px;
+    border-bottom: black solid -2px;
+}
+  
+/* muda cor dos itens ao passar o mouse */
+.dropdown-content a:hover {background-color: #ddd;}
+  
+/* mostra os itens quando passa o mouse */
+.dropdown-item:hover .dropdown-content {display: block;}
+
+.search-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.search-bar img{
+    width: 35px;
+    height: 35px;
+}
+
+.login-button {
+    background-color: #790000;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.login-button a {
+    color: white;    
+    text-decoration: none;
+}
+
+/*cookies*/
+
+header #cookies{
+    margin: -10px -20px;
+    padding: 2px 20px;
+    width: calc(100% + 20px);
+    margin-top: 87px;
+}
+
+#cookies{
+    background-color: #ff0000;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cookies_botoes{
+    background-color: #ff0000;
+    align-items: center;
+    display: flex;
+    justify-content: end;
+}
+#cookie-button{
+    border: 1px solid #ffffff;
+    padding: 4px 16px;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+#cookies-button{
+    padding: 8px 16px;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 10px;
+    border-radius: 50px;
+}
+
+/* Conteúdo da homePage */
+
+.PhomePage {
+    margin-top: 90px;
+}
+
+    /*planos de cartões*/
+#cartao{
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.cartoes{
+    border: 5px;
+    border-radius: 15px;
+    width: 29%;
+    padding: 20px 15px;
+    font-size: 20px;
+    background-color: rgba(245, 245, 220, 0.978);
+    box-shadow: 15px 10px 20px black;
+    margin-top: 120px;
+}
+
+.cartoes:hover{
+    background-color: rgba(245, 245, 220, 0.978);
+    transform: scale(1.05);
+    box-decoration-break: 20px 15px 25px black;
+}
+
+.titulo-cartoes{
+    box-shadow: 0px 1px 0px gray;
+    margin-block-end: 20px;
+}
+
+.preco{
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.topicos{
+    width: 90%;
+    justify-content: left;
+    display: flex;
+    align-items: flex-start;
+    margin: 10px;
+}
+
+.topicos img{
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    margin-bottom: 5px;
+}
+
+.topicos p{
+    text-align: left;
+}
+
+
+.homepage{
+    align-items: center;
+    justify-items: center;
+}
+
+/*tutorial de como abrir uma conta*/
+#tutorial{
+    width: 93%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 120px;
+    gap: 20px;
+}
+
+#tut-imagem{
+
+}
+
+#tut-imagem img{
+    width: 500px;
+    height: 500px;
+    border-radius: 50px;
+    border: 3px solid #ff0000;
+}
+
+#tutorial-escrita{
+    font-size: 25px;
+}
+
+.tut-escrita{
+    justify-content:flex-start;
+    align-items: normal;
+    flex-direction: row;
+    gap: 25px;
+    display: flex;
+}
+
+.tut-escrita img{
+    width: 40px;
+    height: 40px;
+    border: #fa3e3e;
+}
+
+/*App*/
+#app{
+    width: 93%;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    margin-top: 120px;
+    gap: 12px;
+}
+
+#app img{
+    width: 50%;
+}
+
+#app-escrita{
+    font-size: 26px;
+    width: 50%;
+}
+
+#app-escrita p{
+    justify-content: flex-start;
+    flex-direction: row;
+    display: flex;
+}
+/*
+    Página de login
+*/
+
+.login-header {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    background-color: #ff0000;
+}
+
+.login-header h2 {
+    opacity: 0;
+}
+
+.login-header a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.login-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: #fa3e3e;
+}
+    
+.login-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+    
+input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+    
+button {
+    background: #790000;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+    
+.error {
+    color: red;
+    margin-top: 10px;
+}
+
+.PLogin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 
+    Página de contato
+*/
+
+.contato-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: #fa3e3e;
+}
+    
+.contato-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
 }
