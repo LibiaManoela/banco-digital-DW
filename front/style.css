@@ -35,9 +35,6 @@ header li {
     margin: 0 10px;
 }
 
-#header {
-    
-}
 .info {
     display: flex;
     flex-direction: column;
@@ -239,7 +236,7 @@ footer li a {
     text-decoration: none;
 }
 
-/*cookies*/
+/* cookies */
 
 header #cookies{
     margin: -10px -20px;
@@ -289,7 +286,7 @@ header #cookies{
     margin-top: 90px;
 }
 
-    /*planos de cartões*/
+/* planos de cartões */
 #cartao{
     justify-content: space-evenly;
     display: flex;
@@ -359,10 +356,6 @@ header #cookies{
     align-items: flex-start;
     margin-top: 120px;
     gap: 20px;
-}
-
-#tut-imagem{
-
 }
 
 #tut-imagem img{
@@ -495,4 +488,14 @@ button {
     padding: 20px;
     border-radius: 8px;
     text-align: center;
+}
+
+.contato-container h2 {
+    margin-bottom: 15px;
+}
+
+.number{
+    font-size: 20px;
+    margin-top: 10px;
+    color: #790000;
 }
