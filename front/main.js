@@ -4,15 +4,27 @@ function login() {
     const pass = document.getElementById("password").value;
     const errorMessage = document.getElementById("error-message");
 
-    const predefinedUser = "admin";
-    const predefinedPass = "1234";
+    // const predefinedUser = "admin";
+    // const predefinedPass = "1234";
 
-    if (user === predefinedUser && pass === predefinedPass) {
-        alert("Login bem-sucedido!");
-        window.location.href = "index.html"; // Redireciona para a página index.html
-    } else {
-        errorMessage.textContent = "Usuário ou senha incorretos.";
-    }
+    // if (user === predefinedUser && pass === predefinedPass) {
+    //     alert("Login bem-sucedido!");
+    //     window.location.href = "index.html"; // Redireciona para a página index.html
+    // } else {
+    //     errorMessage.textContent = "Usuário ou senha incorretos.";
+    // }
+    //https://backend-banco-rym4.onrender.com/login
+
+    fetch('http://localhost:3000/login', {
+        method:'POST', 
+        headers:{
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+            user:user,
+            pass:pass
+        })
+    })
 }
 
 //Fechar mensagem dos cookies na HomePage
