@@ -21,8 +21,8 @@ function login() {
             "Content-Type": "application/json",
         },
         body: JSON.stringify({
-            user:user,
-            pass:pass
+            user:usuario,
+            pass:senha
         })
     })
 }
