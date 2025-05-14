@@ -16,15 +16,16 @@ function login() {
     //https://backend-banco-rym4.onrender.com/login
 
     fetch('http://localhost:3000/login', {
-        method:'POST', 
-        headers:{
+        method: 'POST',
+        headers: {
             "Content-Type": "application/json",
         },
         body: JSON.stringify({
-            user:usuario,
-            pass:senha
+            usuario: user,  
+            senha: pass      
         })
     })
+
 }
 
 //Fechar mensagem dos cookies na HomePage
