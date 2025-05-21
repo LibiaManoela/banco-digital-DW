@@ -52,7 +52,7 @@ header li {
     padding-bottom: 10vh;
     display: flex;
     flex-direction: column;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-items: center;
     font-size: 20px;
     color: #fff;
@@ -108,12 +108,12 @@ footer li a {
     margin: 5px 5px;
 }
 
-.acoes ul{
+.acoes ul {
     display: flex;
     flex-direction: row;
 }
 
-.acoes li{
+.acoes li {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -149,7 +149,8 @@ footer li a {
     border-collapse: collapse;
 }
 
-.transacoes th, .transacoes td {
+.transacoes th,
+.transacoes td {
     text-align: center;
     color: #fff;
     padding: 15px 30px;
@@ -175,12 +176,12 @@ footer li a {
     border: none;
 }
 
-.dropdown-item a{
+.dropdown-item a {
     color: white;
     text-decoration: none;
     cursor: pointer;
 }
-  
+
 /* conteúdo (aqui ele é oculto) */
 .dropdown-content {
     display: none;
@@ -189,7 +190,7 @@ footer li a {
     min-width: 160px;
     z-index: 1;
 }
-  
+
 /* Links do dropdown */
 .dropdown-content a {
     color: black;
@@ -201,21 +202,25 @@ footer li a {
     border: black solid 1px;
     border-bottom: black solid -2px;
 }
-  
-/* muda cor dos itens ao passar o mouse */
-.dropdown-content a:hover {background-color: #ddd;}
-  
-/* mostra os itens quando passa o mouse */
-.dropdown-item:hover .dropdown-content {display: block;}
 
-.search-bar{
+/* muda cor dos itens ao passar o mouse */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* mostra os itens quando passa o mouse */
+.dropdown-item:hover .dropdown-content {
+    display: block;
+}
+
+.search-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 5px;
 }
 
-.search-bar img{
+.search-bar img {
     width: 35px;
     height: 35px;
 }
@@ -232,20 +237,20 @@ footer li a {
 }
 
 .login-button a {
-    color: white;    
+    color: white;
     text-decoration: none;
 }
 
 /* cookies */
 
-header #cookies{
+header #cookies {
     margin: -10px -20px;
     padding: 2px 20px;
     width: calc(100% + 20px);
     margin-top: 87px;
 }
 
-#cookies{
+#cookies {
     background-color: #ff0000;
     position: fixed;
     width: 100%;
@@ -255,13 +260,14 @@ header #cookies{
     align-items: center;
 }
 
-#cookies_botoes{
+#cookies_botoes {
     background-color: #ff0000;
     align-items: center;
     display: flex;
     justify-content: end;
 }
-#cookie-button{
+
+#cookie-button {
     border: 1px solid #ffffff;
     padding: 4px 16px;
     text-align: center;
@@ -271,7 +277,7 @@ header #cookies{
     border-radius: 5px;
 }
 
-#cookies-button{
+#cookies-button {
     padding: 8px 16px;
     text-align: center;
     cursor: pointer;
@@ -287,14 +293,14 @@ header #cookies{
 }
 
 /* planos de cartões */
-#cartao{
+#cartao {
     justify-content: space-evenly;
     display: flex;
     flex-direction: row;
     text-align: center;
 }
 
-.cartoes{
+.cartoes {
     border: 5px;
     border-radius: 15px;
     width: 29%;
@@ -305,25 +311,25 @@ header #cookies{
     margin-top: 120px;
 }
 
-.cartoes:hover{
+.cartoes:hover {
     background-color: rgba(245, 245, 220, 0.978);
     transform: scale(1.05);
     box-decoration-break: 20px 15px 25px black;
 }
 
-.titulo-cartoes{
+.titulo-cartoes {
     box-shadow: 0px 1px 0px gray;
     margin-block-end: 20px;
 }
 
-.preco{
+.preco {
     justify-content: center;
     width: 100%;
     display: flex;
     align-items: center;
 }
 
-.topicos{
+.topicos {
     width: 90%;
     justify-content: left;
     display: flex;
@@ -331,25 +337,25 @@ header #cookies{
     margin: 10px;
 }
 
-.topicos img{
+.topicos img {
     border-radius: 100%;
     width: 25px;
     height: 25px;
     margin-bottom: 5px;
 }
 
-.topicos p{
+.topicos p {
     text-align: left;
 }
 
 
-.homepage{
+.homepage {
     align-items: center;
     justify-items: center;
 }
 
 /*tutorial de como abrir uma conta*/
-#tutorial{
+#tutorial {
     width: 93%;
     display: flex;
     justify-content: space-between;
@@ -358,33 +364,33 @@ header #cookies{
     gap: 20px;
 }
 
-#tut-imagem img{
+#tut-imagem img {
     width: 500px;
     height: 500px;
     border-radius: 50px;
     border: 3px solid #ff0000;
 }
 
-#tutorial-escrita{
+#tutorial-escrita {
     font-size: 25px;
 }
 
-.tut-escrita{
-    justify-content:flex-start;
+.tut-escrita {
+    justify-content: flex-start;
     align-items: normal;
     flex-direction: row;
     gap: 25px;
     display: flex;
 }
 
-.tut-escrita img{
+.tut-escrita img {
     width: 40px;
     height: 40px;
     border: #fa3e3e;
 }
 
 /*App*/
-#app{
+#app {
     width: 93%;
     justify-content: space-around;
     flex-direction: row;
@@ -394,20 +400,21 @@ header #cookies{
     gap: 12px;
 }
 
-#app img{
+#app img {
     width: 50%;
 }
 
-#app-escrita{
+#app-escrita {
     font-size: 26px;
     width: 50%;
 }
 
-#app-escrita p{
+#app-escrita p {
     justify-content: flex-start;
     flex-direction: row;
     display: flex;
 }
+
 /*
     Página de login
 */
@@ -436,21 +443,21 @@ header #cookies{
     height: 90vh;
     background-color: #fa3e3e;
 }
-    
+
 .login-container {
     background: white;
     padding: 20px;
     border-radius: 8px;
     text-align: center;
 }
-    
+
 input {
     display: block;
     width: 100%;
     padding: 10px;
     margin: 10px 0;
 }
-    
+
 button {
     background: #790000;
     color: white;
@@ -459,7 +466,7 @@ button {
     cursor: pointer;
     width: 100%;
 }
-    
+
 .error {
     color: red;
     margin-top: 10px;
@@ -482,7 +489,7 @@ button {
     height: 90vh;
     background-color: #fa3e3e;
 }
-    
+
 .contato-container {
     background: white;
     padding: 20px;
@@ -494,8 +501,66 @@ button {
     margin-bottom: 15px;
 }
 
-.number{
+.number {
     font-size: 20px;
     margin-top: 10px;
     color: #790000;
+}
+
+/*
+    Cartão bancário
+*/
+.cartao-bancario {
+    width: 350px;
+    height: 210px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.chip {
+    width: 50px;
+    height: 35px;
+    background: #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+#numero-cartao {
+    font-size: 1.3em;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+.detalhes {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.95em;
+}
+
+.banco-nome {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-weight: bold;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+}
+.centraliza-cartao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.ocultar-info{
+    text-align:center; 
+    margin-bottom: 200px;
 }

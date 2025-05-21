@@ -4,17 +4,6 @@ function login() {
     const pass = document.getElementById("password").value;
     const errorMessage = document.getElementById("error-message");
 
-    // const predefinedUser = "admin";
-    // const predefinedPass = "1234";
-
-    // if (user === predefinedUser && pass === predefinedPass) {
-    //     alert("Login bem-sucedido!");
-    //     window.location.href = "index.html"; // Redireciona para a página index.html
-    // } else {
-    //     errorMessage.textContent = "Usuário ou senha incorretos.";
-    // }
-    //https://backend-banco-rym4.onrender.com/login
-
     fetch('http://localhost:3000/login', {
         method: 'POST',
         headers: {
@@ -34,7 +23,6 @@ function login() {
             errorMessage.textContent = "Usuário ou senha incorretos.";
        }
     })
-
 }
 
 //Fechar mensagem dos cookies na HomePage
@@ -57,4 +45,21 @@ function saldo(){
     });
 }
 
-window.onload = saldo;
+// Mostrar/ocultar número do cartão
+function detalhes() {
+    const numeroCartao = document.getElementById('numero-cartao');
+    const checkbox = document.getElementById('toggleDetalhes');
+
+    const numero = '1234 5678 9012 3456';
+    const oculto = '************';
+
+    checkbox.addEventListener('change', function () {
+        numeroCartao.textContent = this.checked ? numero : oculto;
+    });
+}
+
+window.onload = function() {
+    saldo();
+    detalhes();
+};
+
