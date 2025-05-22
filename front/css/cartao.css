@@ -83,48 +83,60 @@ footer li a {
     text-decoration-line: underline;
 }
 
-/* 
-    Conteúdo do index
+/*
+    Cartão bancário
 */
-
-.cabecalho {
+.cartao-bancario {
+    width: 350px;
+    height: 210px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    padding: 30px 25px;
     display: flex;
     flex-direction: column;
-    padding: 8vh 8vw;
-    background-color: #ff0000;
-    border-radius: 15px;
-    margin-top: 5px;
-}
-
-.saldo {
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    padding: 8vh 8vw;
-    gap: 2vw;
-    background-color: #ff0000;
-    border-radius: 15px;
-    margin: 5px 5px;
+    position: relative;
 }
 
-.acoes ul {
+.chip {
+    width: 50px;
+    height: 35px;
+    background: #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+#numero-cartao {
+    font-size: 1.3em;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+.detalhes {
     display: flex;
-    flex-direction: row;
-}
-
-.acoes li {
-    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    padding: 4vh 4vw;
-    gap: 2vw;
-    background-color: #ff0000;
-    border-radius: 15px;
-    margin: 5px 5px;
+    font-size: 0.95em;
 }
 
-.acoes li a {
-    color: #fff;
-    text-decoration: none;
+.banco-nome {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-weight: bold;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+}
+.centraliza-cartao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.ocultar-info{
+    text-align:center; 
+    margin-bottom: 200px;
 }

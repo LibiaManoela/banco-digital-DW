@@ -83,48 +83,66 @@ footer li a {
     text-decoration-line: underline;
 }
 
-/* 
-    Conteúdo do index
+/*
+    Página de login
 */
 
-.cabecalho {
+.login-header {
     display: flex;
-    flex-direction: column;
-    padding: 8vh 8vw;
-    background-color: #ff0000;
-    border-radius: 15px;
-    margin-top: 5px;
-}
-
-.saldo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    padding: 8vh 8vw;
-    gap: 2vw;
+    height: 10vh;
     background-color: #ff0000;
-    border-radius: 15px;
-    margin: 5px 5px;
 }
 
-.acoes ul {
-    display: flex;
-    flex-direction: row;
+.login-header h2 {
+    opacity: 0;
 }
 
-.acoes li {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 4vh 4vw;
-    gap: 2vw;
-    background-color: #ff0000;
-    border-radius: 15px;
-    margin: 5px 5px;
-}
-
-.acoes li a {
-    color: #fff;
+.login-header a {
+    color: white;
     text-decoration: none;
+    font-size: 20px;
 }
+
+.login-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: #fa3e3e;
+}
+
+.login-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    background: #790000;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+}
+
+.PLogin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

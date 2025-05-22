@@ -84,47 +84,21 @@ footer li a {
 }
 
 /* 
-    Conteúdo do index
+    Formulário de Empréstimo
 */
 
-.cabecalho {
+.emprestimo h3{
+    margin-bottom: 20px;
+}
+
+#emprestimoForm {
     display: flex;
     flex-direction: column;
-    padding: 8vh 8vw;
-    background-color: #ff0000;
-    border-radius: 15px;
-    margin-top: 5px;
-}
-
-.saldo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 8vh 8vw;
-    gap: 2vw;
-    background-color: #ff0000;
-    border-radius: 15px;
-    margin: 5px 5px;
+    width: 100%;
 }
 
-.acoes ul {
-    display: flex;
-    flex-direction: row;
-}
-
-.acoes li {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 4vh 4vw;
-    gap: 2vw;
-    background-color: #ff0000;
-    border-radius: 15px;
-    margin: 5px 5px;
-}
-
-.acoes li a {
-    color: #fff;
-    text-decoration: none;
+#emprestimoForm button, label, input {
+    margin-top: 20px;
 }

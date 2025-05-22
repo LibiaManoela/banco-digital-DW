@@ -84,47 +84,29 @@ footer li a {
 }
 
 /* 
-    Conteúdo do index
+    Transações
 */
-
-.cabecalho {
+.transacoes {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     padding: 8vh 8vw;
     background-color: #ff0000;
     border-radius: 15px;
     margin-top: 5px;
+    gap: 20px;
 }
 
-.saldo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8vh 8vw;
-    gap: 2vw;
-    background-color: #ff0000;
-    border-radius: 15px;
-    margin: 5px 5px;
+.transacoes table {
+    width: 100%;
+    border-collapse: collapse;
 }
 
-.acoes ul {
-    display: flex;
-    flex-direction: row;
-}
-
-.acoes li {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 4vh 4vw;
-    gap: 2vw;
-    background-color: #ff0000;
-    border-radius: 15px;
-    margin: 5px 5px;
-}
-
-.acoes li a {
+.transacoes th,
+.transacoes td {
+    text-align: center;
     color: #fff;
-    text-decoration: none;
+    padding: 15px 30px;
+    border-bottom: #fff solid 1px;
 }
