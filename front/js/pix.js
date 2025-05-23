@@ -1,22 +1,11 @@
-let transacoesPix = []; // Esta array será usada para carregar e adicionar
-
-// Função para carregar transações do localStorage ao iniciar a página
 function carregarTransacoes() {
-    const transacoesSalvas = localStorage.getItem('transacoesPix');
-    if (transacoesSalvas) {
-        // Se houver transações salvas, parseia de volta para um array de objetos
-        transacoesPix = JSON.parse(transacoesSalvas);
-    }
+    const transacoesSalvas = localStorage.getItem('transacoesGlobais'); // Usar chave global
+    return transacoesSalvas ? JSON.parse(transacoesSalvas) : [];
 }
 
-// Função para salvar as transações atualizadas no localStorage
-function salvarTransacoes() {
-    // Converte o array de objetos para uma string JSON antes de salvar
-    localStorage.setItem('transacoesPix', JSON.stringify(transacoesPix));
+function salvarTransacoes(transacoes) {
+    localStorage.setItem('transacoesGlobais', JSON.stringify(transacoes)); // Usar chave global
 }
-
-// Carregar transações assim que o script é executado (quando a página PIX carrega)
-carregarTransacoes();
 
 document.addEventListener('DOMContentLoaded', function() {
     const pixForm = document.getElementById('pixForm');
@@ -29,19 +18,23 @@ document.addEventListener('DOMContentLoaded', function() {
             const valorPix = parseFloat(document.getElementById('valor').value);
 
             if (chavePix && !isNaN(valorPix) && valorPix > 0) {
+                let transacoesGlobais = carregarTransacoes(); // Carrega transações globais
+
                 const novaTransacao = {
-                    chave: chavePix,
+                    tipo: 'PIX', // Identifica o tipo de transação
+                    descricao: `PIX para ${chavePix}`,
                     valor: valorPix,
-                    data: new Date().toLocaleString('pt-BR') // Formato de data/hora brasileiro
+                    data: new Date().toLocaleDateString('pt-BR'), // Apenas a data
+                    status: 'Concluído'
                 };
 
-                transacoesPix.push(novaTransacao); // Adiciona a nova transação
-                salvarTransacoes(); // SALVA A LISTA ATUALIZADA NO localStorage
+                transacoesGlobais.push(novaTransacao);
+                salvarTransacoes(transacoesGlobais); // Salva a lista atualizada
 
-                pixForm.reset(); // Limpa o formulário
+                pixForm.reset();
 
                 console.log('Transação PIX registrada:', novaTransacao);
-                console.log('Todas as transações (persistenes):', transacoesPix);
+                console.log('Todas as transações (globais):', transacoesGlobais);
 
                 alert(`PIX de R$${valorPix.toFixed(2)} para ${chavePix} enviado com sucesso!`);
 
@@ -50,6 +43,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     } else {
-        console.warn('Formulário com ID "pixForm" não encontrado. Verifique seu HTML.');
+        console.warn('Formulário com ID "pixForm" não encontrado.');
     }
 });

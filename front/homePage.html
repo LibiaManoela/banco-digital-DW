@@ -3,187 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/homepage.css"> 
-    <script src="js/main.js"></script>
-    <title>BANCO</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/saldo.js"></script>
+    <title>Banco digital</title>
 </head>
 <body>
-    <header id="header">
-        <div class="dropdown">
-                <ul>
-                    <li class="dropdown-item">
-                        <a href="#">Para você ▼</a>
-                        <ul class="dropdown-content">
-                            <li><a href="#">Cartões</a></li>
-                            <li><a href="#">Contas</a></li>
-                            <li><a href="#">Empréstimo e Financiamento</a></li>
-                            <li><a href="#">Habitação</a></li>
-                            <li><a href="#">Investimentos</a></li>
-                            <li><a href="#">Seguros</a></li>
-                            <li><a href="#">Loterias</a></li>
-                            <li><a href="#">Negocie sua dívida</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown-item"><a href="">Para sua empresa ▼</a>
-                        <ul class="dropdown-content">
-                            <li><a href="#">Agro</a></li>
-                            <li><a href="#">Cartões</a></li>
-                            <li><a href="#">Comércio Exterior</a></li>
-                            <li><a href="#">Contas</a></li>
-                            <li><a href="#">Crédito e Financiamento</a></li>
-                            <li><a href="#">MEI</a></li>
-                            <li><a href="#">Negocie sua dívida</a></li>
-                            <li><a href="#">Nichos de mercado</a></li>
-                            <li><a href="#">Parceria</a></li>
-                        </ul>
-                    
-                    </li>
-                    <li class="dropdown-item"><a href="">Institucional ▼</a>
-                        <ul class="dropdown-content">
-                            <li><a href="#">Aviso de privacidade</a></li>
-                            <li><a href="#">Notícias</a></li>
-                            <li><a href="#">Educação Financeira</a></li>
-                            <li><a href="#">Patrocínios</a></li>
-                            <li><a href="#">Segurança</a></li>
-                            <li><a href="#">Transparência</a></li>
-                            <li><a href="#">Sustentabilidade</a></li>
-                        </ul>
-
-                    </li>
-                </ul>                   
-
-        </div>
-<!-- Este é um comentário HTML -->
-        <h1>Bem-vindo ao BANCO!</h1>
-        <div class="search-bar">
-            <input type="text" placeholder="Pesquisar...">
-            <img src="imagens/lupa2.png">
-        </div>
-        <ul class="ajuda">
-            <li><a href="contato.html">Contato</a></li>
-            <li class="login-button"><a href="login.html">Acessar conta</a></li>
+    <header>
+        <ul class="info">
+            <li>*Tipo de conta*</li>
+            <li>*Agência e numeração*</li>
         </ul>
-        <div id="cookies">
-            <p>Este site salva seu histórico de uso. Ao continuar navegando você concorda com a política de <u>cookies</u> e <u>privacidade</u>.</p>
-            <div id="cookies-botoes">
-                <div id="cookie-button" onclick = 'cookies()'>
-                    <p>Ok</p>
-                </div>
-                <div id="cookies-button" onclick = 'cookies()'>
-                    <P>X</P>
-                </div>
-            </div>
-        </div>
+  
+        <h1>Bem-vindo ao BANCO!</h1>
+        <ul class="ajuda">
+                <li><a href="index.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+        </ul>
     </header>
-    
-      <div id="cartao">
-        <div class="cartoes">
-            <div class="titulo-cartoes">
-                <h2>Conta Free</h2>
-                <div class="preco">
-                    <h2>R$ 0,00</h2>
-                    <h3>/mês</h3>
-                </div>
-            </div>
-            <div class="topicos">
-                <img src="imagens/setaVermelha.png">
-                <p>Conta gratuita com cheques ilimitados.</p>
-            </div>
-            <div class="topicos">
-                <img src="imagens/setaVermelha.png">
-                <p>Chat online 24 horas.</p>
-            </div> 
-            <div class="topicos">
-                <img src="imagens/setaVermelha.png">
-                <p>Parcelamento do valor do pix em até 24x.</p>
-            </div> 
-        </div>
-        <div class="cartoes">
-            <div class="titulo-cartoes">
-                <h2>Conta Plus</h2>
-                <div class="preco">
-                    <h2>R$ 49,90</h2>
-                    <h3>/mês</h3>
-                </div>
-            </div>
-            <div class="topicos">
-                <img src="imagens/setaVermelha.png">
-                <p>3 meses grátis.</p>
-            </div>
-            <div class="topicos">
-                <img src="imagens/setaVermelha.png">
-                <p>Até 100% no desconto do valor do pacote de acordo com o número de investimentos.</p>
-            </div> 
-            <div class="topicos">
-                <img src="imagens/setaVermelha.png">
-                <p>Saques ilimitados nos caixas eletrônicos.</p>
-            </div> 
-            <div class="topicos">
-                <img src="imagens/setaVermelha.png">
-                <p>Atendimento com especialista disponível no chat e telefone.</p>
-            </div> 
-        </div>
-        <div class="cartoes">
-            <div class="titulo-cartoes">
-                <h2>Conta PlusMaster</h2>
-                <div class="preco">
-                    <h2>R$ 99,99</h2>
-                    <h3>/mês</h3>
-                </div>
-            </div>
-            <div class="topicos">
-                <img src="imagens/setaVermelha.png">
-                <p>3 meses grátis.</p>
-            </div>
-            <div class="topicos">
-                <img src="imagens/setaVermelha.png">
-                <p>Até 100% no desconto do valor do pacote de acordo com o número de investimentos.</p>
-            </div> 
-            <div class="topicos">
-                <img src="imagens/setaVermelha.png">
-                <p>Atendimento com especialista disponível no chat, telefone, app e pessoalmente.</p>
-            </div> 
-            <div class="topicos">
-                <img src="imagens/setaVermelha.png">
-                <p>Ofertas exclusivas, áreas VIPs, prioridade e filas e mais.</p>
-            </div> 
-        </div>
-      </div>
 
-      <div class="homepage">
-        <div id="tutorial">
-            <div id="tut-imagem">
-                <img src="imagens/telaBanco.png">
+    <div class="home">
+
+        <div class="cabecalho">
+            <h2>Olá, usuário</h2>
+            <p>Cliente BANCO</p>
+        </div>
+
+        <div class="saldo">
+            <div class="info-saldo">        
+                <p>Seu saldo é: </p>
+                <p id="valor">R$ 1000,00</p>
             </div>
-            <div id="tutorial-escrita">
-                <h2>Abra a sua conta de onde estiver e já comece a usar:</h2>
-                <br>
-                <div class="tut-escrita">
-                    <img src="imagens/setaVermelha.png">
-                    <p>Preencha seus dados e escolha seu cartão e pacote de serviço ideal.</p>
-                </div>
-                <br>
-                <div class="tut-escrita">
-                    <img src="imagens/setaVermelha.png">
-                    <p>Durante o pedido de abertura, você pode configurar a senha e já começar a movimentar a sua conta.</p>
-                </div>
-                <br>
-                <div class="tut-escrita">
-                    <img src="imagens/setaVermelha.png">
-                    <p>Tenha o cartão online antes mesmo do seu físico chegar, controle seus gastos com o App Way e cadastre seu cartão nas carteiras digitais.</p>
-                </div>
+            <div>
+                <label>Mostrar Saldo</label>
+                <input type="checkbox" id="toggleSaldo" checked>
             </div>
         </div>
-        <div id="app">
-            <div id="app-escrita">
-                <h2>Experimente o App Banco</h2>
-                <br>
-                <p>Agilidade, praticidade e segurança par fazer transações e contar com o atendimento pelo chat, onde e quando você precisar.</p>
-                <br>
-                <p>Abra sua conta, baixe o App e confira!</p>
-            </div>
-            <img src="imagens/App.jpeg">
+        <div class="acoes">
+            <ul>
+                <li><a href="emprestimo.html">Pegar empréstimo</a></li>
+                <li><a href="pagarConta.html">Pagar conta</a></li>
+                <li><a href="pix.html">Fazer Pix</a></li>
+            </ul>
         </div>
+
     </div>
+
+    <footer>>
+        <ul>
+            <li><a href="homePage.html">Início</a></li>
+            <li><a href="transacoes.html">Transações</a></li>
+            <li><a href="cartao.html">Cartão</a></li>
+            <li><a href="#configuracoes">Configurações</a></li>
+        </ul>
+    </footer>
 </body>
 </html>
