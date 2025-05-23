@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/transacoes.css">
-    <script src="main.js"></script>
     <title>Transações</title>
 </head>
 <body>
@@ -13,7 +12,7 @@
             <li>*Tipo de conta*</li>
             <li>*Agência e numeração*</li>
         </ul>
-  
+
         <h1>Bem-vindo ao BANCO!</h1>
         <ul class="ajuda">
                 <li><a href="homePage.html">Sobre</a></li>
@@ -30,47 +29,23 @@
                         <th>Data</th>
                         <th>Descrição</th>
                         <th>Valor</th>
-                        <th>Status</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td>01/04/2025</td>
-                        <td>Depósito</td>
-                        <td>+ R$ 500,00</td>
-                        <td>Concluído</td>
-                    </tr>
-                    <tr>
-                        <td>30/03/2025</td>
-                        <td>Pagamento Boleto</td>
-                        <td>- R$ 150,00</td>
-                        <td>Concluído</td>
-                    </tr>
-                    <tr>
-                        <td>28/03/2025</td>
-                        <td>Transferência PIX</td>
-                        <td>- R$ 200,00</td>
-                        <td>Pendente</td>
-                    </tr>
-                    <tr>
-                        <td>25/03/2025</td>
-                        <td>Cashback</td>
-                        <td>+ R$ 20,00</td>
-                        <td>Concluído</td>
-                    </tr>
-                </tbody>
+                <tbody id="corpoTabelaTransacoes">
+                    </tbody>
             </table>
+            <p id="mensagem-sem-transacoes" style="display: none; text-align: center; margin-top: 20px;">Nenhuma transação PIX encontrada.</p>
         </div>
-
     </div>
 
 <footer>
     <ul>
         <li><a href="index.html">Início</a></li>
         <li><a href="transacoes.html">Transações</a></li>
-        <li><a href="#cartao">Cartão</a></li>
+        <li><a href="cartao.html">Cartão</a></li>
         <li><a href="#configuracoes">Configurações</a></li>
     </ul>
 </footer>
+    <script src="js/transacoes.js"></script>
 </body>
 </html>
