@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const listaHistoricoPix = document.getElementById('listaHistoricoPix');
     const mensagemSemTransacoes = document.getElementById('mensagem-sem-transacoes');
 
-    // Carrega as transações do localStorage
+    // carrega as transações do localStorage
     const transacoesSalvas = localStorage.getItem('transacoesPix');
     let transacoesPix = [];
 
@@ -10,21 +10,21 @@ document.addEventListener('DOMContentLoaded', function() {
         transacoesPix = JSON.parse(transacoesSalvas);
     }
 
-    // Verifica se há transações para exibir
+    // verifica se há transações para exibir
     if (transacoesPix.length === 0) {
         if (mensagemSemTransacoes) {
-            mensagemSemTransacoes.style.display = 'block'; // Mostra a mensagem
+            mensagemSemTransacoes.style.display = 'block'; 
         }
         if (listaHistoricoPix) {
-            listaHistoricoPix.style.display = 'none'; // Esconde a lista vazia
+            listaHistoricoPix.style.display = 'none'; // esconde a lista vazia
         }
     } else {
         if (mensagemSemTransacoes) {
-            mensagemSemTransacoes.style.display = 'none'; // Esconde a mensagem
+            mensagemSemTransacoes.style.display = 'none'; // esconde a mensagem
         }
         if (listaHistoricoPix) {
-            listaHistoricoPix.style.display = 'block'; // Mostra a lista
-            // Itera sobre as transações e as adiciona à lista HTML
+            listaHistoricoPix.style.display = 'block'; // mostra a lista
+            // itera sobre as transações e as adiciona à lista HTML
             transacoesPix.forEach(transacao => {
                 const li = document.createElement('li');
                 li.textContent = `Chave: ${transacao.chave} | Valor: R$${transacao.valor.toFixed(2)} | Data: ${transacao.data}`;

@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 let transacoesGlobais = carregarTransacoes();
 
                 const novaTransacao = {
-                    tipo: 'Pagar Conta', // Identifica o tipo de transação
+                    tipo: 'Pagar Conta', 
                     descricao: `Pagamento de conta: ${codigoBarras}`,
                     valor: valorConta,
                     data: new Date().toLocaleDateString('pt-BR'),

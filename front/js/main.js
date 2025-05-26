@@ -1,4 +1,4 @@
-//Validação do Login
+// validação do Login
 function login() {
     const user = document.getElementById("username").value;
     const pass = document.getElementById("password").value;
@@ -25,7 +25,7 @@ function login() {
     })
 }
 
-//Fechar mensagem dos cookies na HomePage
+// fechar mensagem dos cookies na HomePage
 function cookies(){
     const cookies = document.getElementById('cookies')
     const header  = document.getElementById('header')

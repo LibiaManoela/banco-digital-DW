@@ -1,4 +1,4 @@
-// Mostrar/ocultar número do cartão
+// mostrar/ocultar número do cartão
 function detalhes() {
     const numeroCartao = document.getElementById('numero-cartao');
     const checkbox = document.getElementById('toggleDetalhes');

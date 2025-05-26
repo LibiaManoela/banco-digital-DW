@@ -1,4 +1,4 @@
-//Mostrar saldo
+// mostrar saldo
 function saldo(){
     const saldo    = document.getElementById('valor')
     const checkbox = document.getElementById('toggleSaldo')

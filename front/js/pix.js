@@ -1,10 +1,10 @@
 function carregarTransacoes() {
-    const transacoesSalvas = localStorage.getItem('transacoesGlobais'); // Usar chave global
+    const transacoesSalvas = localStorage.getItem('transacoesGlobais'); // chave global
     return transacoesSalvas ? JSON.parse(transacoesSalvas) : [];
 }
 
 function salvarTransacoes(transacoes) {
-    localStorage.setItem('transacoesGlobais', JSON.stringify(transacoes)); // Usar chave global
+    localStorage.setItem('transacoesGlobais', JSON.stringify(transacoes)); // chave global
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -18,18 +18,18 @@ document.addEventListener('DOMContentLoaded', function() {
             const valorPix = parseFloat(document.getElementById('valor').value);
 
             if (chavePix && !isNaN(valorPix) && valorPix > 0) {
-                let transacoesGlobais = carregarTransacoes(); // Carrega transações globais
+                let transacoesGlobais = carregarTransacoes(); // carrega transações globais
 
                 const novaTransacao = {
                     tipo: 'PIX', // Identifica o tipo de transação
                     descricao: `PIX para ${chavePix}`,
                     valor: valorPix,
-                    data: new Date().toLocaleDateString('pt-BR'), // Apenas a data
+                    data: new Date().toLocaleDateString('pt-BR'),
                     status: 'Concluído'
                 };
 
                 transacoesGlobais.push(novaTransacao);
-                salvarTransacoes(transacoesGlobais); // Salva a lista atualizada
+                salvarTransacoes(transacoesGlobais); // salva a lista atualizada
 
                 pixForm.reset();
 
