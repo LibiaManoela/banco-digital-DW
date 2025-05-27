@@ -110,3 +110,9 @@ footer li a {
     padding: 15px 30px;
     border-bottom: #fff solid 1px;
 }
+
+#mensagem-sem-transacoes {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
