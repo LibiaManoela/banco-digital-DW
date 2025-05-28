@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 let transacoesGlobais = carregarTransacoes(); // carrega transações globais
 
                 const novaTransacao = {
-                    tipo: 'PIX', // Identifica o tipo de transação
+                    tipo: 'PIX',
                     descricao: `PIX para ${chavePix}`,
                     valor: valorPix,
                     data: new Date().toLocaleDateString('pt-BR'),

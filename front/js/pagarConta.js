@@ -1,16 +1,19 @@
+//carregar transações anteriores
 function carregarTransacoes() {
     const transacoesSalvas = localStorage.getItem('transacoesGlobais');
     return transacoesSalvas ? JSON.parse(transacoesSalvas) : [];
 }
 
+//salvar transações
 function salvarTransacoes(transacoes) {
     localStorage.setItem('transacoesGlobais', JSON.stringify(transacoes));
 }
 
+//coletar, validar, processar e salvar novas transações
 document.addEventListener('DOMContentLoaded', function() {
     const pagarContaForm = document.getElementById('pagarContaForm');
 
-    if (pagarContaForm) {
+    if (pagarContaForm) { // verifica se o formulário existe
         pagarContaForm.addEventListener('submit', function(event) {
             event.preventDefault();
 
@@ -37,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 alert(`Conta de R$${valorConta.toFixed(2)} (${codigoBarras}) paga com sucesso!`);
 
-            } else {
+            } else { //se validação dos dados falhar
                 alert('Por favor, preencha o código de barras e um valor válido.');
             }
         });

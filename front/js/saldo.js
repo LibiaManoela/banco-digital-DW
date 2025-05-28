@@ -3,11 +3,11 @@ function saldo(){
     const saldo    = document.getElementById('valor')
     const checkbox = document.getElementById('toggleSaldo')
 
-    const valor  = 'R$ 1000,00';
+    const visivel  = 'R$ 1000,00';
     const oculto = '*********';
 
     checkbox.addEventListener('change', function() {
-    saldo.textContent = this.checked ? valor : oculto;
+    saldo.textContent = this.checked ? visivel : oculto;
     });
 }
 
