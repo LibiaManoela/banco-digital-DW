@@ -39,36 +39,36 @@ Atualmente, o sistema conta com as seguintes funcionalidades:
 
 O projeto está organizado nas seguintes pastas:
 
-├── front/
-│   ├── css/
-│   │   ├── cartao.css
-│   │   ├── contato.css
-│   │   ├── emprestimo.css
-│   │   ├── homepage.css
-│   │   ├── login.css
-│   │   ├── pagarConta.css
-│   │   ├── pix.css
-│   │   ├── style.css
-│   │   └── transacoes.css
-│   ├── js/
-│   │   ├── cartao.js
-│   │   ├── main.js
-│   │   ├── pagarConta.js
-│   │   ├── pix.js
-│   │   ├── saldo.js
-│   │   └── transacoes.js
-│   ├── imagens/
-│   ├── cartao.html
-│   ├── contato.html
-│   ├── emprestimo.html
-│   ├── homePage.html
-│   ├── index.html
-│   ├── login.html
-│   ├── pagarConta.html
-│   ├── pix.html
-│   └── transacoes.html
+front/
+├── css/
+│   ├── cartao.css
+│   ├── contato.css
+│   ├── emprestimo.css
+│   ├── homepage.css
+│   ├── login.css
+│   ├── pagarConta.css
+│   ├── pix.css
+│   ├── style.css
+│   └── transacoes.css
+├── js/
+│   ├── cartao.js
+│   ├── main.js
+│   ├── pagarConta.js
+│   ├── pix.js
+│   ├── saldo.js
+│   └── transacoes.js
+├── imagens/
+│   └── (imagens do projeto)
+├── cartao.html
+├── contato.html
+├── emprestimo.html
+├── homePage.html
+├── index.html
+├── login.html
+├── pagarConta.html
+├── pix.html
+├── transacoes.html
 └── README.md
-
 
 * **`front/`**: Contém todos os arquivos front-end da aplicação.
     * **`css/`**: Folhas de estilo CSS para cada página ou componente.
