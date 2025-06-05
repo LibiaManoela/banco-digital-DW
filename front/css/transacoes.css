@@ -116,3 +116,26 @@ footer li a {
     text-align: center;
     margin-top: 20px;
 }
+
+/* 
+    Gerar PDF
+*/
+.container-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0; /* espaço entre a tabela e o botão */
+}
+
+#btnGerarPDF {
+    background-color: #fa3e3e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btnGerarPDF:hover {
+    background-color: #ac5959c5;
+}

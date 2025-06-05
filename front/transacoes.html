@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/transacoes.css">
     <title>Transações</title>
 </head>
+
 <body>
     <header>
         <ul class="info">
@@ -15,8 +17,8 @@
 
         <h1>Bem-vindo ao BANCO!</h1>
         <ul class="ajuda">
-                <li><a href="index.html">Sobre</a></li>
-                <li><a href="contato.html">Contato</a></li>
+            <li><a href="index.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
         </ul>
     </header>
 
@@ -32,20 +34,38 @@
                     </tr>
                 </thead>
                 <tbody id="corpoTabelaTransacoes">
-                    </tbody>
+                </tbody>
             </table>
             <p id="mensagem-sem-transacoes">Nenhuma transação encontrada.</p>
-        </div>
-    </div>
+            <div id="soma-transacoes">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Total de transações</th>
+                            <th>R$ <span id="totalTransacoes">0,00</span></th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
 
-<footer>
-    <ul>
-        <li><a href="homePage.html">Início</a></li>
-        <li><a href="transacoes.html">Transações</a></li>
-        <li><a href="cartao.html">Cartão</a></li>
-        <li><a href="#configuracoes">Configurações</a></li>
-    </ul>
-</footer>
-    <script src="js/transacoes.js"></script>
+            <div class="container-btn">
+                <button id="btnGerarPDF">Gerar extrato PDF</button>
+            </div>
+        </div>
+
+        <footer>
+            <ul>
+                <li><a href="homePage.html">Início</a></li>
+                <li><a href="transacoes.html">Transações</a></li>
+                <li><a href="cartao.html">Cartão</a></li>
+                <li><a href="#configuracoes">Configurações</a></li>
+            </ul>
+        </footer>
+        <script src="js/transacoes.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.28/jspdf.plugin.autotable.min.js"></script>
+        <script>  window.jsPDF = window.jspdf.jsPDF; </script>
 </body>
+
 </html>
