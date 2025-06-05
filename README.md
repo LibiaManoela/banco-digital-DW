@@ -39,7 +39,6 @@ Atualmente, o sistema conta com as seguintes funcionalidades:
 
 O projeto está organizado nas seguintes pastas:
 
-.
 ├── front/
 │   ├── css/
 │   │   ├── cartao.css
