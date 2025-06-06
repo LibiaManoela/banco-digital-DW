@@ -140,3 +140,7 @@ footer li a {
     text-align:center; 
     margin-bottom: 200px;
 }
+
+.ocultar-info {
+    margin-top: -220px;
+}
