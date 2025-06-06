@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/emprestimo.css">
-    <script src="main.js"></script>
-    <title>Empréstimo</title>
+    <link rel="stylesheet" href="../css/pix.css">
+    <title>PIX</title>
 </head>
 <body>
     <header>
@@ -22,19 +21,18 @@
     </header>
 
     <div class="home">
-        <div class="emprestimo">
-            <h3>Solicitar Empréstimo</h3>
-            <form id="emprestimoForm">
-                <label for="valor">Valor do Empréstimo:</label>
-                <input type="number" id="valor" name="valor" required>
+        <div class="pix">
+            <h3>Fazer PIX</h3>
+            <form id="pixForm">
+                <label for="chave">Chave PIX:</label>
+                <input type="text" id="chave" name="chave" required>
 
-                <label for="parcelas">Número de Parcelas:</label>
-                <input type="number" id="parcelas" name="parcelas" required>
+                <label for="valor">Valor:</label>
+                <input type="number" id="valor" name="valor" required>
 
                 <button type="submit">Enviar</button>
             </form>
         </div>
-
     </div>
 
     <footer>
@@ -45,5 +43,6 @@
             <li><a href="#configuracoes">Configurações</a></li>
         </ul>
     </footer>
+    <script src="../js/pix.js"></script>
 </body>
 </html>

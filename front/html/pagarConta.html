@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/saldo.js"></script>
-    <title>Banco digital</title>
+    <link rel="stylesheet" href="../css/pagarConta.css">
+    <title>Pagar conta</title>
 </head>
 <body>
     <header>
@@ -22,33 +21,22 @@
     </header>
 
     <div class="home">
+        <div class="pagar-conta">
+            <h3>Pagar conta</h3>
+            <form id="pagarContaForm">
+                <label for="codigoBarras">Código de barras:</label>
+                <input type="text" id="codigoBarras" name="codigoBarras" required>
 
-        <div class="cabecalho">
-            <h2>Olá, usuário</h2>
-            <p>Cliente BANCO</p>
-        </div>
+                <label for="valor">Valor:</label>
+                <input type="number" id="valor" name="valor" required>
 
-        <div class="saldo">
-            <div class="info-saldo">        
-                <p>Seu saldo é: </p>
-                <p id="valor">R$ 1000,00</p>
-            </div>
-            <div>
-                <label>Mostrar Saldo</label>
-                <input type="checkbox" id="toggleSaldo" checked>
-            </div>
-        </div>
-        <div class="acoes">
-            <ul>
-                <li><a href="emprestimo.html">Pegar empréstimo</a></li>
-                <li><a href="pagarConta.html">Pagar conta</a></li>
-                <li><a href="pix.html">Fazer Pix</a></li>
-            </ul>
+                <button type="submit">Pagar</button>
+            </form>
         </div>
 
     </div>
 
-    <footer>>
+    <footer>
         <ul>
             <li><a href="homePage.html">Início</a></li>
             <li><a href="transacoes.html">Transações</a></li>
@@ -56,5 +44,6 @@
             <li><a href="#configuracoes">Configurações</a></li>
         </ul>
     </footer>
+    <script src="../js/pagarConta.js"></script>
 </body>
 </html>
