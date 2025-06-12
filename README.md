@@ -39,6 +39,7 @@ Atualmente, o sistema conta com as seguintes funcionalidades:
 
 O projeto está organizado nas seguintes pastas:
 
+```
 front/
 ├── css/
 │   ├── cartao.css
@@ -69,6 +70,7 @@ front/
 ├── pix.html
 ├── transacoes.html
 └── README.md
+```
 
 * **`front/`**: Contém todos os arquivos front-end da aplicação.
   * **`css/`**: Folhas de estilo CSS para cada página ou componente.
@@ -119,3 +121,21 @@ Aqui estão alguns links úteis relacionados às tecnologias e funcionalidades e
   * Aula ReactJS - CRUD: [https://kosmicke.medium.com/aula-14-reactjs-crud-6fc836d3918a](https://kosmicke.medium.com/aula-14-reactjs-crud-6fc836d3918a)
 
 ---
+
+biblioteca moment usada para pegar momento atual e fazer cálculos para usalos na filtragem de transações dos ultimos 30 dias
+https://momentjs.com/
+https://cdnjs.com/libraries/moment.js entender o que é CDN
+
+sanitizar: ocultar dados sensíveis trocando eles por algo
+https://github.com/microsoft/presidio biblioteca para sanitizar
+veo3 ganhei acesso com o gemini plus
+google colab
+llM:
+Um modelo de linguagem grande (LLM) é um tipo de programa de inteligência artificial (IA) que pode reconhecer e gerar texto, entre outras tarefas.
+
+usar meu premium gemini pra pegar chave de API pra integrar no chat
+
+https://ollama.com/ baixando o ollama no pc, pode rodar comando pra instalar uma IA localmente, no pc, é como se fosse um Node de IA, já que ainda precisa do fetch e conexões semelhantes, o ollama vai rodar localmente
+
+a ideia é usar uma AI e fazer com que ela use ferramentas que na verdade são trechos do meu código
+https://dev.to/pavanbelagatti/model-context-protocol-mcp-101-a-hands-on-beginners-guide-47ho 
