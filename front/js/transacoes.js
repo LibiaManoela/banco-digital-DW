@@ -1,35 +1,28 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const corpoTabelaTransacoes = document.getElementById('corpoTabelaTransacoes');
-    const mensagemSemTransacoes = document.getElementById('mensagem-sem-transacoes');
+document.addEventListener("DOMContentLoaded", function () {
+    const corpoTabelaTransacoes = document.getElementById(
+        "corpoTabelaTransacoes"
+    );
+    const mensagemSemTransacoes = document.getElementById(
+        "mensagem-sem-transacoes"
+    );
 
-    const transacoesSalvas = localStorage.getItem('transacoesGlobais');
+    const transacoesSalvas = localStorage.getItem("transacoesGlobais");
     let transacoesGlobais = transacoesSalvas ? JSON.parse(transacoesSalvas) : [];
 
-    // // filtrar transações dos últimos 30 dias
-    // const hoje = new Date();
-    // const trintaDiasAtras = new Date();
-    // trintaDiasAtras.setDate(hoje.getDate() - 30);
-
-    // transacoesGlobais = transacoesGlobais.filter(transacao => {
-    //     const dataTransacao = new Date(transacao.data);
-    //     return dataTransacao >= trintaDiasAtras && dataTransacao <= hoje;
-    // });
-
-    // // função para converter "dd/mm/aaaa" em objeto Date
-    // function converterDataBrasileiraParaDate(dataString) {
-    //     const [dia, mes, ano] = dataString.split('/');
-    //     return new Date(`${ano}-${mes}-${dia}`);
-    // }
+    transacoesGlobais = transacoesGlobais.filter((transacao) => {
+        let dataTransacao = moment(transacao.data, "DD/MM/YYYY");
+        return dataTransacao.isBetween(moment().subtract(30, "days"), moment());
+    });
 
     if (transacoesGlobais.length === 0) {
-        mensagemSemTransacoes.style.display = 'block';
+        mensagemSemTransacoes.style.display = "block";
     } else {
-        mensagemSemTransacoes.style.display = 'none';
+        mensagemSemTransacoes.style.display = "none";
 
         // reverter a ordem para exibir as mais recentes primeiro
         transacoesGlobais.reverse();
 
-        transacoesGlobais.forEach(transacao => {
+        transacoesGlobais.forEach((transacao) => {
             const row = corpoTabelaTransacoes.insertRow();
 
             const cellData = row.insertCell();
@@ -41,15 +34,14 @@ document.addEventListener('DOMContentLoaded', function() {
             const cellValor = row.insertCell();
             cellValor.textContent = `R$ ${transacao.valor.toFixed(2)}`;
         });
-        
+
         let soma = 0;
-        transacoesGlobais.forEach(transacao => {
+        transacoesGlobais.forEach((transacao) => {
             soma = soma + transacao.valor;
         });
 
         const totalSpan = document.getElementById("totalTransacoes");
-        totalSpan.textContent = soma.toFixed(2).replace('.', ',');
-
+        totalSpan.textContent = soma.toFixed(2).replace(".", ",");
     }
 });
 
@@ -59,32 +51,36 @@ document.getElementById("btnGerarPDF").addEventListener("click", () => {
 
     doc.text("Relatório de transações referente aos últimos 30 dias", 14, 15);
 
-    const corpoTabela = document.getElementById('corpoTabelaTransacoes');
-    const linhas = corpoTabela.querySelectorAll('tr');
+    const corpoTabela = document.getElementById("corpoTabelaTransacoes");
+    const linhas = corpoTabela.querySelectorAll("tr");
 
     const dadosTabela = [];
 
-    linhas.forEach(linha => {
-        const colunas = linha.querySelectorAll('td');
-        const linhaDados = Array.from(colunas).map(td => td.textContent);
+    linhas.forEach((linha) => {
+        const colunas = linha.querySelectorAll("td");
+        const linhaDados = Array.from(colunas).map((td) => td.textContent);
         dadosTabela.push(linhaDados);
     });
 
     doc.autoTable({
-        head: [['Data', 'Descrição', 'Valor']],
+        head: [["Data", "Descrição", "Valor"]],
         body: dadosTabela,
         startY: 25,
-        theme: 'grid',
+        theme: "grid",
         styles: {
             fontSize: 10,
-            cellPadding: 4
+            cellPadding: 4,
         },
         headStyles: {
-            fillColor: [220, 53, 69] // cor vermelha
-        }
+            fillColor: [220, 53, 69], // cor vermelha
+        },
     });
 
-    doc.text(`Total: R$ ${document.getElementById("totalTransacoes").textContent}`, 14, doc.lastAutoTable.finalY + 10);
-    
+    doc.text(
+        `Total: R$ ${document.getElementById("totalTransacoes").textContent}`,
+        14,
+        doc.lastAutoTable.finalY + 10
+    );
+
     doc.save("extrato.pdf");
 });
