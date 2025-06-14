@@ -95,12 +95,19 @@ Para visualizar o projeto em seu navegador:
 * **JavaScript:** Lógica de interatividade e manipulação do DOM.
 * **jsPDF:** Biblioteca JavaScript para geração de arquivos PDF (utilizada na página de Transações).
 * **jsPDF-AutoTable:** Plugin para jsPDF que facilita a criação de tabelas em PDFs.
+* **Moment.js:** Biblioteca usada para pegar o momento atual e fazer cálculos para filtrar transações dos últimos 30 dias.
 
 ## Próximos Passos e Melhorias Futuras (Anotações do Desenvolvedor)
 
-De acordo com as anotações do projeto:
-
 * Adicionar um `<span>` na página inicial.
+* **Sanitização de Dados:** Ocultar dados sensíveis, trocando-os por algo.
+  * Biblioteca de exemplo: [https://github.com/microsoft/presidio](https://github.com/microsoft/presidio)
+* **LLM (Large Language Model):** Um tipo de programa de inteligência artificial (IA) que pode reconhecer e gerar texto, entre outras tarefas.
+* **Integração com Gemini:** Utilizar a chave de API do Gemini para integrar o chat.
+* **Uso de IA para Ferramentas:** A ideia é fazer com que uma IA use ferramentas que são, na verdade, trechos do próprio código.
+  * Referência: [https://dev.to/pavanbelagatti/model-context-protocol-mcp-101-a-hands-on-beginners-guide-47ho](https://dev.to/pavanbelagatti/model-context-protocol-mcp-101-a-hands-on-beginners-guide-47ho)
+* **Ollama:** Ferramenta para rodar IA localmente no PC, agindo como um "Node de IA" que ainda precisa de `fetch` e conexões semelhantes, mas executa localmente.
+  * Site oficial: [https://ollama.com/](https://ollama.com/)
 * Implementar um CRUD (Create, Read, Update, Delete) com React para:
   * **Create:** Em 'Pagar Conta' e 'Fazer Pix' (já parcialmente implementado com `localStorage`).
   * **Visualizar:** Em 'Transações' (já implementado).
@@ -112,6 +119,9 @@ De acordo com as anotações do projeto:
 
 Aqui estão alguns links úteis relacionados às tecnologias e funcionalidades exploradas neste projeto:
 
+* **Moment.js (para datas):**
+  * Documentação Oficial: [https://momentjs.com/](https://momentjs.com/)
+  * CDN: [https://cdnjs.com/libraries/moment.js](https://cdnjs.com/libraries/moment.js)
 * **jsPDF (para geração de PDF):**
   * Documentação Oficial: [https://www.npmjs.com/package/jspdf](https://www.npmjs.com/package/jspdf)
   * Tutorial sobre Geração de PDF com JavaScript: [https://medium.com/profdiegopinho/gerando-arquivos-pdf-com-javascript-23e8b19fde99](https://medium.com/profdiegopinho/gerando-arquivos-pdf-com-javascript-23e8b19fde99)
@@ -121,21 +131,3 @@ Aqui estão alguns links úteis relacionados às tecnologias e funcionalidades e
   * Aula ReactJS - CRUD: [https://kosmicke.medium.com/aula-14-reactjs-crud-6fc836d3918a](https://kosmicke.medium.com/aula-14-reactjs-crud-6fc836d3918a)
 
 ---
-
-biblioteca moment usada para pegar momento atual e fazer cálculos para usalos na filtragem de transações dos ultimos 30 dias
-https://momentjs.com/
-https://cdnjs.com/libraries/moment.js entender o que é CDN
-
-sanitizar: ocultar dados sensíveis trocando eles por algo
-https://github.com/microsoft/presidio biblioteca para sanitizar
-veo3 ganhei acesso com o gemini plus
-google colab
-llM:
-Um modelo de linguagem grande (LLM) é um tipo de programa de inteligência artificial (IA) que pode reconhecer e gerar texto, entre outras tarefas.
-
-usar meu premium gemini pra pegar chave de API pra integrar no chat
-
-https://ollama.com/ baixando o ollama no pc, pode rodar comando pra instalar uma IA localmente, no pc, é como se fosse um Node de IA, já que ainda precisa do fetch e conexões semelhantes, o ollama vai rodar localmente
-
-a ideia é usar uma AI e fazer com que ela use ferramentas que na verdade são trechos do meu código
-https://dev.to/pavanbelagatti/model-context-protocol-mcp-101-a-hands-on-beginners-guide-47ho 
