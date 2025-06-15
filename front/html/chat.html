@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/pagarConta.css">
-    <title>Pagar conta</title>
+    <link rel="stylesheet" href="../css/chat.css">
+    <script src="../js/saldo.js"></script>
+    <title>Banco digital</title>
 </head>
+
 <body>
     <header>
         <ul class="info">
             <li>*Tipo de conta*</li>
             <li>*Agência e numeração*</li>
         </ul>
-  
-        <h1>Bem-vindo ao BANCO!</h1>
+
+        <h1>Chat de atendimento</h1>
         <ul class="ajuda">
-                <li><a href="index.html">Sobre</a></li>
-                <li><a href="contato.html">Contato</a></li>
+            <li><a href="index.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
         </ul>
     </header>
 
     <div class="home">
-        <div class="pagar-conta">
-            <h3>Pagar conta</h3>
-            <form id="pagarContaForm">
-                <label for="codigoBarras">Código de barras:</label>
-                <input type="text" id="codigoBarras" name="codigoBarras" required>
 
-                <label for="valor">Valor:</label>
-                <input type="number" id="valor" name="valor" required>
+        <div class="atendente">
+            <h2>Olá, sou a AI</h2>
+            <p>Seja bem vindo!</p>
+        </div>
 
-                <button type="submit">Pagar</button>
-            </form>
+        <div class="chat">
+        </div>
+        <div id="chatForm">
+            <input type="text" id="mensagem" placeholder="Digite sua mensagem..." required>
+            <button type="submit">Enviar</button>
         </div>
 
     </div>
@@ -45,6 +48,6 @@
             <li><a href="#configuracoes">Configurações</a></li>
         </ul>
     </footer>
-    <script src="../js/pagarConta.js"></script>
 </body>
+
 </html>
