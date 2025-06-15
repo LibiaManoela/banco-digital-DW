@@ -110,7 +110,7 @@ footer li a {
 }
 
 .mensagem-usuario {
-  background-color: #f1f0f0;
+  background-color: #f09292;
   align-self: flex-end; 
   margin-left: auto;
 }
@@ -152,4 +152,8 @@ footer li a {
 
 #chatForm button:hover {
     background-color: #f0f0f0;
+}
+
+#chat-container {
+    margin-bottom: 100px;
 }

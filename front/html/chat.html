@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/chat.css">
-    <script src="../js/saldo.js"></script>
-    <title>Banco digital</title>
+    <title>Banco digital - Chat</title>
 </head>
 
 <body>
@@ -24,17 +23,17 @@
     </header>
 
     <div class="home">
-
         <div class="atendente">
             <h2>Olá, sou a AI</h2>
             <p>Seja bem vindo!</p>
         </div>
 
-        <div class="chat">
+        <div id="chat-container" class="chat">
         </div>
+
         <div id="chatForm">
-            <input type="text" id="mensagem" placeholder="Digite sua mensagem..." required>
-            <button type="submit">Enviar</button>
+            <input type="text" id="mensagem-input" placeholder="Digite sua mensagem..." required>
+            <button id="enviar-btn">Enviar</button>
         </div>
 
     </div>
@@ -48,6 +47,6 @@
             <li><a href="#configuracoes">Configurações</a></li>
         </ul>
     </footer>
-</body>
+    <script src="../js/chat.js"></script> </body>
 
 </html>
