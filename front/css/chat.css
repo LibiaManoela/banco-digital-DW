@@ -155,5 +155,6 @@ footer li a {
 }
 
 #chat-container {
-    margin-bottom: 100px;
+    margin-bottom: 10vh;
+    margin-top: 10vh;
 }
