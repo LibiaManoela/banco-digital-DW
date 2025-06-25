@@ -35,12 +35,11 @@ function adicionarMensagem(texto, remetente) {
 }
 
 async function enviarMensagemDoUsuario() {
-  const texto = mensagemInput.value.trim();// Pega o texto e remove espaços em branco
+  const texto = mensagemInput.value.trim();// Remove espaços em branco do texto 
 
-  if (texto) { // Verifica se a mensagem não está vazia
-    adicionarMensagem(texto, 'usuario'); // Adiciona a mensagem do usuário
+  if (texto) { 
+    adicionarMensagem(texto, 'usuario');
     
-    // Limpa o input após o envio
     mensagemInput.value = '';
 
     try {
